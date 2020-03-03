@@ -14,8 +14,8 @@ TagManager:
   - 
   - 
   - postporcessing
-  - 
-  - 
+  - Collision Check Layer
+  - Rope Layer
   - 
   - 
   - 
@@ -38,6 +38,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 294313113
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Midground
+    uniqueID: 1957037689
+    locked: 0
+  - name: Player
+    uniqueID: 3030226349
+    locked: 0
+  - name: Foreground
+    uniqueID: 329350723
+    locked: 0
+  - name: HUD
+    uniqueID: 2901581119
     locked: 0
