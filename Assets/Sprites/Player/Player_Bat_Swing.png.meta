@@ -38,6 +38,45 @@ TextureImporter:
   - first:
       213: -1401396324809439010
     second: Player_Bat_Swing_11
+  - first:
+      213: 8055554511793066090
+    second: Player_Bat_Swing_12
+  - first:
+      213: 4441744820699642247
+    second: Player_Bat_Swing_0
+  - first:
+      213: -799939372201238555
+    second: Player_Bat_Swing_1
+  - first:
+      213: 1427858687792669441
+    second: Player_Bat_Swing_2
+  - first:
+      213: -2361679888546546979
+    second: Player_Bat_Swing_3
+  - first:
+      213: -4345222835955451288
+    second: Player_Bat_Swing_4
+  - first:
+      213: 8272709622755236262
+    second: Player_Bat_Swing_5
+  - first:
+      213: 5867923341333832465
+    second: Player_Bat_Swing_6
+  - first:
+      213: -1714805396892964662
+    second: Player_Bat_Swing_7
+  - first:
+      213: -970949376043794166
+    second: Player_Bat_Swing_8
+  - first:
+      213: -4155900904829312035
+    second: Player_Bat_Swing_9
+  - first:
+      213: 8169740940334220848
+    second: Player_Bat_Swing_10
+  - first:
+      213: 5713341836119887428
+    second: Player_Bat_Swing_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -137,19 +176,19 @@ TextureImporter:
       name: Player_Bat_Swing_0
       rect:
         serializedVersion: 2
-        x: 409
-        y: 2658
-        width: 375
-        height: 697
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 2400
+        width: 1200
+        height: 1200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42a325cc06685bc90800000000000000
-      internalID: -7154664682705241564
+      spriteID: 789bbbc816f34ad30800000000000000
+      internalID: 4441744820699642247
       vertices: []
       indices: 
       edges: []
@@ -158,19 +197,19 @@ TextureImporter:
       name: Player_Bat_Swing_1
       rect:
         serializedVersion: 2
-        x: 1610
-        y: 2658
-        width: 369
-        height: 697
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1200
+        y: 2400
+        width: 1200
+        height: 1200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b1e46e9908b9e1d0800000000000000
-      internalID: -3320920898757402187
+      spriteID: 5ef9816116b06e4f0800000000000000
+      internalID: -799939372201238555
       vertices: []
       indices: 
       edges: []
@@ -179,19 +218,19 @@ TextureImporter:
       name: Player_Bat_Swing_2
       rect:
         serializedVersion: 2
-        x: 2808
-        y: 2658
-        width: 372
-        height: 697
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2400
+        y: 2400
+        width: 1200
+        height: 1200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a23aefcc26003f40800000000000000
-      internalID: 5706067517414978208
+      spriteID: 103665359e5c0d310800000000000000
+      internalID: 1427858687792669441
       vertices: []
       indices: 
       edges: []
@@ -200,19 +239,19 @@ TextureImporter:
       name: Player_Bat_Swing_3
       rect:
         serializedVersion: 2
-        x: 3877
-        y: 2654
-        width: 440
-        height: 707
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3600
+        y: 2400
+        width: 1200
+        height: 1200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0e02ff1d20b67950800000000000000
-      internalID: 6446533624483417615
+      spriteID: ddabff177a0a93fd0800000000000000
+      internalID: -2361679888546546979
       vertices: []
       indices: 
       edges: []
@@ -221,19 +260,19 @@ TextureImporter:
       name: Player_Bat_Swing_4
       rect:
         serializedVersion: 2
-        x: 5000
-        y: 2655
-        width: 518
-        height: 700
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4800
+        y: 2400
+        width: 1200
+        height: 1200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b13cd22d370b28260800000000000000
-      internalID: 7098429974183265051
+      spriteID: 86ab5f84adaa2b3c0800000000000000
+      internalID: -4345222835955451288
       vertices: []
       indices: 
       edges: []
@@ -242,19 +281,19 @@ TextureImporter:
       name: Player_Bat_Swing_5
       rect:
         serializedVersion: 2
-        x: 136
-        y: 1454
-        width: 586
-        height: 692
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 1200
+        width: 1200
+        height: 1200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8063c2c8873a41520800000000000000
-      internalID: 2671940217080657416
+      spriteID: 6a9184a32919ec270800000000000000
+      internalID: 8272709622755236262
       vertices: []
       indices: 
       edges: []
@@ -263,19 +302,19 @@ TextureImporter:
       name: Player_Bat_Swing_6
       rect:
         serializedVersion: 2
-        x: 1276
-        y: 1455
-        width: 658
-        height: 676
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1200
+        y: 1200
+        width: 1200
+        height: 1200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b402440ca0f35c4b0800000000000000
-      internalID: -5420857261062610869
+      spriteID: 1132d69703d0f6150800000000000000
+      internalID: 5867923341333832465
       vertices: []
       indices: 
       edges: []
@@ -284,19 +323,19 @@ TextureImporter:
       name: Player_Bat_Swing_7
       rect:
         serializedVersion: 2
-        x: 2630
-        y: 1457
-        width: 518
-        height: 662
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2400
+        y: 1200
+        width: 1200
+        height: 1200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d58f66c33d7556730800000000000000
-      internalID: 3991693209496909917
+      spriteID: ac8a543b399c338e0800000000000000
+      internalID: -1714805396892964662
       vertices: []
       indices: 
       edges: []
@@ -305,19 +344,19 @@ TextureImporter:
       name: Player_Bat_Swing_8
       rect:
         serializedVersion: 2
-        x: 4027
-        y: 1460
-        width: 644
-        height: 697
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3600
+        y: 1200
+        width: 1200
+        height: 1200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db12221856e9aa5a0800000000000000
-      internalID: -6509216152615247427
+      spriteID: a01c502dfae7682f0800000000000000
+      internalID: -970949376043794166
       vertices: []
       indices: 
       edges: []
@@ -326,19 +365,19 @@ TextureImporter:
       name: Player_Bat_Swing_9
       rect:
         serializedVersion: 2
-        x: 5225
-        y: 1460
-        width: 583
-        height: 697
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4800
+        y: 1200
+        width: 1200
+        height: 1200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5c07458d57d3d150800000000000000
-      internalID: 5896293133826067549
+      spriteID: dd3aced55264356c0800000000000000
+      internalID: -4155900904829312035
       vertices: []
       indices: 
       edges: []
@@ -347,19 +386,19 @@ TextureImporter:
       name: Player_Bat_Swing_10
       rect:
         serializedVersion: 2
-        x: 418
-        y: 259
-        width: 380
-        height: 694
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 1200
+        height: 1200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4af9209744b3c3bf0800000000000000
-      internalID: -343334306312970332
+      spriteID: 036469f9910c06170800000000000000
+      internalID: 8169740940334220848
       vertices: []
       indices: 
       edges: []
@@ -368,19 +407,19 @@ TextureImporter:
       name: Player_Bat_Swing_11
       rect:
         serializedVersion: 2
-        x: 1619
-        y: 259
-        width: 372
-        height: 694
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1200
+        y: 0
+        width: 1200
+        height: 1200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed8023ea77d3d8ce0800000000000000
-      internalID: -1401396324809439010
+      spriteID: 44ecd4e112ed94f40800000000000000
+      internalID: 5713341836119887428
       vertices: []
       indices: 
       edges: []
