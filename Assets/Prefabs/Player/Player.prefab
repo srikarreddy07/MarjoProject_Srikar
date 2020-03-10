@@ -40,6 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2537739846797404203}
   - component: {fileID: 2537739846797404202}
+  - component: {fileID: 429788334721857293}
   - component: {fileID: 2537739846797404201}
   - component: {fileID: 2537739846797404200}
   - component: {fileID: 7571041447114163490}
@@ -48,6 +49,7 @@ GameObject:
   - component: {fileID: 2537739846797404208}
   - component: {fileID: 2537739846797404213}
   - component: {fileID: 2537739846797404215}
+  - component: {fileID: 2069698897}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -107,20 +109,46 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1264740947
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6271674672454095231, guid: 00c219b60f69f1d4e9012bd3b7bdba3c,
+  m_Sprite: {fileID: -7154664682705241564, guid: 47189ada7224d3a499c5e88ea643777d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.25, y: 3.2615466}
+  m_Size: {x: 1.125, y: 1.6307733}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &429788334721857293
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537739846797404207}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.8}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.21}
+    oldSize: {x: 3.0000002, y: 3.0004883}
+    newSize: {x: 1.125, y: 1.6307733}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 1.25}
+  m_EdgeRadius: 0
 --- !u!58 &2537739846797404201
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -134,9 +162,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5}
+  m_Offset: {x: 0, y: 0.16}
   serializedVersion: 2
-  m_Radius: 0.4
+  m_Radius: 0.2
 --- !u!50 &2537739846797404200
 Rigidbody2D:
   serializedVersion: 4
@@ -268,3 +296,17 @@ MonoBehaviour:
   isLongJumping: 0
   longJumpDelay: 0.15
   longMultipler: 1.5
+--- !u!114 &2069698897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537739846797404207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754f832c4aeb20048b083d235084588d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  spr: {fileID: 0}

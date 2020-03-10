@@ -26,7 +26,7 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth -= hitPoints;
 
-            UIManager.instance.SetHealthUI(currentHealth);
+            //UIManager.instance.SetHealthUI(currentHealth);
 
             spr.color = new Color(1f, 0f, 0f);
             Invoke("ResetColor", 0.5f);
@@ -38,7 +38,7 @@ public class PlayerHealth : MonoBehaviour
                 Debug.Log("Game Over");
 
                 //if(GameObject.Find("Level Manager").GetComponent<LevelManager>())
-                    LevelManager.instance.LoadStartScence();
+                    //LevelManager.instance.LoadStartScence();
             }
         }
     }

@@ -1,82 +1,79 @@
 fileFormatVersion: 2
-guid: 47189ada7224d3a499c5e88ea643777d
+guid: 7b9340d64863e2749b5a324bc3b1f233
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7154664682705241564
-    second: Player_Bat_Swing_0
+      213: -6969089834156715796
+    second: bear_Idle
   - first:
-      213: -3320920898757402187
-    second: Player_Bat_Swing_1
+      213: 1810490766724150750
+    second: bear_Walk01
   - first:
-      213: 5706067517414978208
-    second: Player_Bat_Swing_2
+      213: -5614922022018869687
+    second: bear_Walk02
   - first:
-      213: 6446533624483417615
-    second: Player_Bat_Swing_3
+      213: 7082999640220342276
+    second: bear_Walk03
   - first:
-      213: 7098429974183265051
-    second: Player_Bat_Swing_4
+      213: 7268239902649386374
+    second: bear_Walk04
   - first:
-      213: 2671940217080657416
-    second: Player_Bat_Swing_5
+      213: 6149037670791867685
+    second: bear_Walk05
   - first:
-      213: -5420857261062610869
-    second: Player_Bat_Swing_6
+      213: -3545163514022424030
+    second: bear_Walk06
   - first:
-      213: 3991693209496909917
-    second: Player_Bat_Swing_7
+      213: 3769125306081353660
+    second: bear_Attack01
   - first:
-      213: -6509216152615247427
-    second: Player_Bat_Swing_8
+      213: -3257059149544276410
+    second: bear_Attack02
   - first:
-      213: 5896293133826067549
-    second: Player_Bat_Swing_9
+      213: -824037284634903111
+    second: bear_Attack03
   - first:
-      213: -343334306312970332
-    second: Player_Bat_Swing_10
+      213: -4069037805041156670
+    second: bear_Attack04
   - first:
-      213: -1401396324809439010
-    second: Player_Bat_Swing_11
+      213: 4865176567216655115
+    second: bear_Hurt
   - first:
-      213: 8055554511793066090
-    second: Player_Bat_Swing_12
+      213: 902210706097380458
+    second: Bear_idle
   - first:
-      213: 4441744820699642247
-    second: Player_Bat_Swing_0
+      213: -6890450953200356761
+    second: Bear_Walk01
   - first:
-      213: -799939372201238555
-    second: Player_Bat_Swing_1
+      213: -306915923983438694
+    second: Bear_Walk02
   - first:
-      213: 1427858687792669441
-    second: Player_Bat_Swing_2
+      213: 7076555638031691213
+    second: Bear_Walk03
   - first:
-      213: -2361679888546546979
-    second: Player_Bat_Swing_3
+      213: 758582078837001294
+    second: Bear_Walk04
   - first:
-      213: -4345222835955451288
-    second: Player_Bat_Swing_4
+      213: -2437636024069893651
+    second: Bear_Walk05
   - first:
-      213: 8272709622755236262
-    second: Player_Bat_Swing_5
+      213: -1482539566058140000
+    second: Bear_Walk06
   - first:
-      213: 5867923341333832465
-    second: Player_Bat_Swing_6
+      213: 5365126027139111678
+    second: Bear_Attack01
   - first:
-      213: -1714805396892964662
-    second: Player_Bat_Swing_7
+      213: 320598361082509546
+    second: Bear_Attack02
   - first:
-      213: -970949376043794166
-    second: Player_Bat_Swing_8
+      213: 913177706406807593
+    second: Bear_Attack03
   - first:
-      213: -4155900904829312035
-    second: Player_Bat_Swing_9
+      213: 4016382659095763689
+    second: Bear_Attack04
   - first:
-      213: 8169740940334220848
-    second: Player_Bat_Swing_10
-  - first:
-      213: 5713341836119887428
-    second: Player_Bat_Swing_11
+      213: -7239814843870231806
+    second: Bear_Hurt
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -120,7 +117,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -173,13 +170,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Bat_Swing_0
+      name: Bear_idle
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2400
-        width: 1200
-        height: 1200
+        x: 30
+        y: 656
+        width: 88
+        height: 144
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 789bbbc816f34ad30800000000000000
-      internalID: 4441744820699642247
+      spriteID: a6c1d796bdb458c00800000000000000
+      internalID: 902210706097380458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Bat_Swing_1
+      name: Bear_Walk01
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 2400
-        width: 1200
-        height: 1200
+        x: 30
+        y: 467
+        width: 88
+        height: 142
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ef9816116b06e4f0800000000000000
-      internalID: -799939372201238555
+      spriteID: 762bd308d533060a0800000000000000
+      internalID: -6890450953200356761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Bat_Swing_2
+      name: Bear_Walk02
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 2400
-        width: 1200
-        height: 1200
+        x: 130
+        y: 467
+        width: 88
+        height: 143
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 103665359e5c0d310800000000000000
-      internalID: 1427858687792669441
+      spriteID: a9c6e0fd79d9dbbf0800000000000000
+      internalID: -306915923983438694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Bat_Swing_3
+      name: Bear_Walk03
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 2400
-        width: 1200
-        height: 1200
+        x: 230
+        y: 467
+        width: 88
+        height: 144
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddabff177a0a93fd0800000000000000
-      internalID: -2361679888546546979
+      spriteID: dcdaa2e0cd9f43260800000000000000
+      internalID: 7076555638031691213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Bat_Swing_4
+      name: Bear_Walk04
       rect:
         serializedVersion: 2
-        x: 4800
-        y: 2400
-        width: 1200
-        height: 1200
+        x: 330
+        y: 467
+        width: 88
+        height: 142
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,20 +268,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86ab5f84adaa2b3c0800000000000000
-      internalID: -4345222835955451288
+      spriteID: e4c8e0ea166078a00800000000000000
+      internalID: 758582078837001294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Bat_Swing_5
+      name: Bear_Walk05
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1200
-        width: 1200
-        height: 1200
+        x: 430
+        y: 467
+        width: 88
+        height: 143
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,20 +289,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a9184a32919ec270800000000000000
-      internalID: 8272709622755236262
+      spriteID: de15e9583f6cb2ed0800000000000000
+      internalID: -2437636024069893651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Bat_Swing_6
+      name: Bear_Walk06
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 1200
-        width: 1200
-        height: 1200
+        x: 530
+        y: 467
+        width: 88
+        height: 144
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1132d69703d0f6150800000000000000
-      internalID: 5867923341333832465
+      spriteID: 0ae84a79e16fc6be0800000000000000
+      internalID: -1482539566058140000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Bat_Swing_7
+      name: Bear_Attack01
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 1200
-        width: 1200
-        height: 1200
+        x: 25
+        y: 228
+        width: 91
+        height: 197
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,20 +331,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac8a543b399c338e0800000000000000
-      internalID: -1714805396892964662
+      spriteID: efa54de22b1c47a40800000000000000
+      internalID: 5365126027139111678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Bat_Swing_8
+      name: Bear_Attack02
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 1200
-        width: 1200
-        height: 1200
+        x: 116
+        y: 227
+        width: 100
+        height: 194
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,20 +352,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a01c502dfae7682f0800000000000000
-      internalID: -970949376043794166
+      spriteID: ae835e3c28ef27400800000000000000
+      internalID: 320598361082509546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Bat_Swing_9
+      name: Bear_Attack03
       rect:
         serializedVersion: 2
-        x: 4800
-        y: 1200
-        width: 1200
-        height: 1200
+        x: 227
+        y: 227
+        width: 154
+        height: 195
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,20 +373,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd3aced55264356c0800000000000000
-      internalID: -4155900904829312035
+      spriteID: 9280f2729424cac00800000000000000
+      internalID: 913177706406807593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Bat_Swing_10
+      name: Bear_Attack04
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1200
-        height: 1200
+        x: 399
+        y: 225
+        width: 163
+        height: 198
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,20 +394,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 036469f9910c06170800000000000000
-      internalID: 8169740940334220848
+      spriteID: 9ea117dafbe0db730800000000000000
+      internalID: 4016382659095763689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Bat_Swing_11
+      name: Bear_Hurt
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 0
-        width: 1200
-        height: 1200
+        x: 7
+        y: 27
+        width: 139
+        height: 149
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,8 +415,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44ecd4e112ed94f40800000000000000
-      internalID: 5713341836119887428
+      spriteID: 203c387f1c2078b90800000000000000
+      internalID: -7239814843870231806
       vertices: []
       indices: 
       edges: []
