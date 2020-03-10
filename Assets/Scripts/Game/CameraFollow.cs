@@ -5,8 +5,8 @@ public class CameraFollow : MonoBehaviour
     [Header("Variables")]
     [SerializeField] Transform target;
     [SerializeField] float smoothTime = 0.15f; // time to follow target
-    [SerializeField] Vector3 velocity = Vector3.zero;
     [SerializeField] Vector3 offset;
+    private Vector3 velocity = Vector3.zero;
 
     [Header("Bounds")]
     [SerializeField] bool xMinEnabled = false;
@@ -18,10 +18,19 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] bool yMaxEnabled = false;
     [SerializeField] float yMaxValue = 0f;
 
+    private void Awake()
+    {
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+    }
 
     private void FixedUpdate()
     {
         // target position
+        if (target == null)
+        {
+            target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+            return;
+        }        
         Vector3 targetPosition = target.position - offset;
 
         // Vertical

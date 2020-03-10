@@ -25,7 +25,7 @@ public class LongJump : Jump
         {
             Vector2 rb = rbdy2D.velocity;
 
-            rbdy2D.velocity = new Vector2(rb.x, jumpSpeed * longMultipler);
+            rbdy2D.velocity = new Vector2(0f, jumpSpeed * longMultipler);
 
             canLongJump = false;
             isLongJumping = true;
