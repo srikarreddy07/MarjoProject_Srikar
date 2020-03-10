@@ -122,6 +122,195 @@ TextureImporter:
   - first:
       213: -3546140138312956100
     second: Player_Walk_9
+  - first:
+      213: -7239274821903753911
+    second: PlayerWalking_SpriteStip_0
+  - first:
+      213: 6724277300658751796
+    second: PlayerWalking_SpriteStip_1
+  - first:
+      213: -5801842399921835074
+    second: PlayerWalking_SpriteStip_2
+  - first:
+      213: 4181481416117836690
+    second: PlayerWalking_SpriteStip_3
+  - first:
+      213: -3459817231300329595
+    second: PlayerWalking_SpriteStip_4
+  - first:
+      213: 1609958621453342706
+    second: PlayerWalking_SpriteStip_5
+  - first:
+      213: 2571823666661136341
+    second: PlayerWalking_SpriteStip_6
+  - first:
+      213: -8181699191524350838
+    second: PlayerWalking_SpriteStip_7
+  - first:
+      213: 2967002511289714689
+    second: PlayerWalking_SpriteStip_8
+  - first:
+      213: 3379546748905029889
+    second: PlayerWalking_SpriteStip_9
+  - first:
+      213: 7426594376450309401
+    second: PlayerWalking_SpriteStip_10
+  - first:
+      213: 1767987626942595431
+    second: PlayerWalking_SpriteStip_11
+  - first:
+      213: 1477404671877712963
+    second: PlayerWalking_SpriteStip_12
+  - first:
+      213: 5765749421998171318
+    second: PlayerWalking_SpriteStip_13
+  - first:
+      213: 3260689620494225522
+    second: PlayerWalking_SpriteStip_14
+  - first:
+      213: -7246213267060769572
+    second: PlayerWalking_SpriteStip_0
+  - first:
+      213: -6843950725345447289
+    second: PlayerWalking_SpriteStip_1
+  - first:
+      213: -3077234184202084845
+    second: PlayerWalking_SpriteStip_2
+  - first:
+      213: 7935243769979114132
+    second: PlayerWalking_SpriteStip_3
+  - first:
+      213: -8346637510197157889
+    second: PlayerWalking_SpriteStip_4
+  - first:
+      213: 3141097400633542489
+    second: PlayerWalking_SpriteStip_5
+  - first:
+      213: -1609332043073747088
+    second: PlayerWalking_SpriteStip_6
+  - first:
+      213: 1691528658259133934
+    second: PlayerWalking_SpriteStip_7
+  - first:
+      213: -5350560053520611087
+    second: PlayerWalking_SpriteStip_8
+  - first:
+      213: -1537978527999540949
+    second: PlayerWalking_SpriteStip_9
+  - first:
+      213: 1869616247118811809
+    second: PlayerWalking_SpriteStip_10
+  - first:
+      213: -4648329466740091687
+    second: PlayerWalking_SpriteStip_11
+  - first:
+      213: -3045177788096718124
+    second: PlayerWalking_SpriteStip_12
+  - first:
+      213: -571426181314462986
+    second: PlayerWalking_SpriteStip_13
+  - first:
+      213: -3971303191780979473
+    second: PlayerWalking_SpriteStip_14
+  - first:
+      213: 1687984813873940070
+    second: Player_Run_SpriteStrip_0
+  - first:
+      213: 5153740908727791096
+    second: Player_Run_SpriteStrip_1
+  - first:
+      213: 6086259399049466457
+    second: Player_Run_SpriteStrip_2
+  - first:
+      213: -2542111457134853449
+    second: Player_Run_SpriteStrip_3
+  - first:
+      213: 4237864520321850545
+    second: Player_Run_SpriteStrip_4
+  - first:
+      213: -9081993584431636890
+    second: Player_Run_SpriteStrip_5
+  - first:
+      213: 2901859538779383009
+    second: Player_Run_SpriteStrip_6
+  - first:
+      213: 4350973167458607246
+    second: Player_Run_SpriteStrip_7
+  - first:
+      213: 7599633319080317229
+    second: Player_Run_SpriteStrip_8
+  - first:
+      213: 4318407056240511848
+    second: Player_Run_SpriteStrip_9
+  - first:
+      213: 3850609084386824944
+    second: Player_Run_SpriteStrip_10
+  - first:
+      213: 2940700494864385260
+    second: Player_Run_SpriteStrip_11
+  - first:
+      213: -2747648369561176056
+    second: Player_Run_SpriteStrip_12
+  - first:
+      213: -535415412610066087
+    second: Player_Run_SpriteStrip_13
+  - first:
+      213: 4656137926559644852
+    second: Player_Run_SpriteStrip_14
+  - first:
+      213: 2309627965569841943
+    second: Player_Run_SpriteStrip_15
+  - first:
+      213: 6284888082655120231
+    second: Player_Run_SpriteStrip_16
+  - first:
+      213: 2338458076848938576
+    second: Player_Run_SpriteStrip_17
+  - first:
+      213: 3819507173289417115
+    second: Player_Run_SpriteStrip_18
+  - first:
+      213: -1173667403428719185
+    second: Player_Run_SpriteStrip_19
+  - first:
+      213: 3621119008547178312
+    second: Player_Run_SpriteStrip_20
+  - first:
+      213: -4749442864583156087
+    second: Player_Run_SpriteStrip_21
+  - first:
+      213: -8835349721187871769
+    second: Player_Run_SpriteStrip_22
+  - first:
+      213: -79066159858514727
+    second: Player_Run_Sprite_0
+  - first:
+      213: -8438337652381056046
+    second: Player_Run_Sprite_1
+  - first:
+      213: -6401879276504348819
+    second: Player_Run_Sprite_2
+  - first:
+      213: -8905810046453281170
+    second: Player_Run_Sprite_3
+  - first:
+      213: 4947771638529897366
+    second: Player_Run_Sprite_4
+  - first:
+      213: -6186666559397274563
+    second: Player_Run_Sprite_5
+  - first:
+      213: -5308666726411993037
+    second: Player_Run_Sprite_6
+  - first:
+      213: 7642130014775111228
+    second: Player_Run_Sprite_7
+  - first:
+      213: -3095779659505210125
+    second: Player_Run_Sprite_8
+  - first:
+      213: -4301611585822823836
+    second: Player_Run_Sprite_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -218,211 +407,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Walk_0
+      name: Player_Run_Sprite_0
       rect:
         serializedVersion: 2
         x: 0
         y: 581
         width: 471
         height: 581
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bfbcd635b56f9800800000000000000
-      internalID: 621327102584340408
+      spriteID: 9d401eb1fb917eef0800000000000000
+      internalID: -79066159858514727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Walk_1
+      name: Player_Run_Sprite_1
       rect:
         serializedVersion: 2
         x: 471
         y: 581
         width: 471
         height: 581
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83067caf386d0a0d0800000000000000
-      internalID: -3413492655210405832
+      spriteID: 2d306070d9005ea80800000000000000
+      internalID: -8438337652381056046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Walk_2
+      name: Player_Run_Sprite_2
       rect:
         serializedVersion: 2
         x: 942
         y: 581
         width: 471
         height: 581
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d768cab2e80cc8980800000000000000
-      internalID: -8535235476923316611
+      spriteID: d67060577b4f727a0800000000000000
+      internalID: -6401879276504348819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Walk_3
+      name: Player_Run_Sprite_3
       rect:
         serializedVersion: 2
         x: 1413
         y: 581
         width: 471
         height: 581
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e405c1d54711d2c0800000000000000
-      internalID: -4408716971579472669
+      spriteID: e6e0c00a2f4386480800000000000000
+      internalID: -8905810046453281170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Walk_4
+      name: Player_Run_Sprite_4
       rect:
         serializedVersion: 2
         x: 1884
         y: 581
         width: 471
         height: 581
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4c07077dc159f4b0800000000000000
-      internalID: -5406199934774473651
+      spriteID: 693b35047140aa440800000000000000
+      internalID: 4947771638529897366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Walk_5
+      name: Player_Run_Sprite_5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 471
         height: 581
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 937fe239eb7b40d90800000000000000
-      internalID: -7132373880707025095
+      spriteID: d3c5657ea8b842aa0800000000000000
+      internalID: -6186666559397274563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Walk_6
+      name: Player_Run_Sprite_6
       rect:
         serializedVersion: 2
         x: 471
         y: 0
         width: 471
         height: 581
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fba1ee5eacb5e0c0800000000000000
-      internalID: -4547020791658468364
+      spriteID: 33007452db3d356b0800000000000000
+      internalID: -5308666726411993037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Walk_7
+      name: Player_Run_Sprite_7
       rect:
         serializedVersion: 2
         x: 942
         y: 0
         width: 471
         height: 581
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b26e045bb658cf690800000000000000
-      internalID: -7567026576240351701
+      spriteID: c3e650a32cc4e0a60800000000000000
+      internalID: 7642130014775111228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Walk_8
+      name: Player_Run_Sprite_8
       rect:
         serializedVersion: 2
         x: 1413
         y: 0
         width: 471
         height: 581
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d41b0db254c14a290800000000000000
-      internalID: -7880142364578107059
+      spriteID: 3fcef444dc49905d0800000000000000
+      internalID: -3095779659505210125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Walk_9
+      name: Player_Run_Sprite_9
       rect:
         serializedVersion: 2
         x: 1884
         y: 0
         width: 471
         height: 581
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c370a1c155499cec0800000000000000
-      internalID: -3546140138312956100
+      spriteID: 46a6359bd0b9d44c0800000000000000
+      internalID: -4301611585822823836
       vertices: []
       indices: 
       edges: []

@@ -16,7 +16,7 @@ TagManager:
   - postporcessing
   - Collision Check Layer
   - Rope Layer
-  - 
+  - Player Layer
   - 
   - 
   - 
@@ -46,6 +46,9 @@ TagManager:
     locked: 0
   - name: Midground
     uniqueID: 1957037689
+    locked: 0
+  - name: Enemies
+    uniqueID: 2021859067
     locked: 0
   - name: Player
     uniqueID: 3030226349

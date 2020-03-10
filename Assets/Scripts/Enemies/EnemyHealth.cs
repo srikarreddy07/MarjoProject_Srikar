@@ -5,10 +5,6 @@ public class EnemyHealth : MonoBehaviour
     [Header("Variables")]
     [SerializeField] float health = 100f;
 
-    [Header("Attack")]
-    [SerializeField] float attackRadius;
-    [SerializeField] Transform attackTrans;
-
     [Header("Components")]
     [SerializeField] SpriteRenderer spr;
 
@@ -62,11 +58,5 @@ public class EnemyHealth : MonoBehaviour
     {
         CancelInvoke();
         spr.color = new Color(1f, 1f, 1f);
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = attackColor;
-        Gizmos.DrawWireCube(attackTrans.position, attackTrans.localScale);
     }
 }

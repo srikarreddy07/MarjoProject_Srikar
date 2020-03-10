@@ -81,6 +81,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -103,7 +104,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1514826941
-  m_SortingLayer: 6
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bd3eefec8bd22cc4fa7bcf1c3b117a05, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -113,7 +114,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &7952064054560868812
@@ -172,25 +173,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 7952064054560868811}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d48ff7db62e19f448f279c12ed80e41, type: 3}
+  m_Script: {fileID: 11500000, guid: f1f4f71b367b5c1408986ffb5f9c14a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
   canMove: 1
-  aiStatus: 0
-  faceDirection: 1
-  PatrolPoints:
-  - {fileID: 7952064055083613782}
-  - {fileID: 7952064054472601128}
-  rayDistance: 2
+  speed: 1.5
+  direction: 0
+  lookDistance: 2
   playerLayer:
     serializedVersion: 2
-    m_Bits: 4096
-  targetTrans: {fileID: 0}
-  attackRate: 1
+    m_Bits: 0
+  targetPlayer: {fileID: 7952064055022609291}
   nextAttack: 0
-  targetDetectionRange: 3.2
-  attackTrans: {fileID: 7952064055022609291}
+  attackRate: 0.5
+  attackTrans: {fileID: 0}
 --- !u!114 &3072963218979145233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,7 +196,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7952064054560868811}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d2454837d0dfca42891143137e3fa8d, type: 3}
+  m_Script: {fileID: 11500000, guid: 9be620625ddb8194897b0d8ad43699bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
@@ -346,6 +342,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -368,7 +365,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1514826941
-  m_SortingLayer: 6
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a78549b794575064aad222a81550d088, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -378,6 +375,6 @@ SpriteRenderer:
   m_Size: {x: 9.2, y: 5.57}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
