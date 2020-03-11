@@ -102,8 +102,7 @@ public class EnemyController : MonoBehaviour
                             transform.parent = obj.transform;
                         }
                     }
-                }
-                
+                }                
                 
                 // Sound
 
