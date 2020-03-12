@@ -2009,6 +2009,7 @@ GameObject:
   - component: {fileID: 8513212269571905809}
   - component: {fileID: 8513212269571905808}
   - component: {fileID: 8513212269571905811}
+  - component: {fileID: 8161239042159640883}
   m_Layer: 5
   m_Name: Setting Menu
   m_TagString: Untagged
@@ -2098,6 +2099,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8161239042159640883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8513212269571905810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d86a93181ce2f89488d22da192d5f507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8513212269837464315
 GameObject:
   m_ObjectHideFlags: 0
@@ -2216,7 +2229,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8161239042159640883}
         m_MethodName: OnBackPressed
         m_Mode: 1
         m_Arguments:

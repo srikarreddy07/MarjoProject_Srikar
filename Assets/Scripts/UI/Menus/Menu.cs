@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace LevelManagement
 {
@@ -22,12 +20,10 @@ namespace LevelManagement
             instance = null;
         }
 
-        public void Open ()
+        public static void Open ()
         {
             if(MenuManager.Instance != null && Instance != null)
-            {
                 MenuManager.Instance.OpenMenu(Instance);
-            }
         }
     }
 

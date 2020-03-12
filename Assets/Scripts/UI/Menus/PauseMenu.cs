@@ -2,17 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PauseMenu : MonoBehaviour
+namespace LevelManagement
 {
-    // Start is called before the first frame update
-    void Start()
+    public class PauseMenu : Menu<PauseMenu>
     {
-        
-    }
+        [SerializeField] int mainMenuIndex = 1;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        public void OnResumePressed ()
+        {
+            Time.timeScale = 1;
+            base.OnBackPressed();
+        }
+
+        public void OnRestartPressed ()
+        {
+            Time.timeScale = 1;
+            LevelLoader.Reload();
+
+            base.OnBackPressed();
+        }
+
+        public void OnMainMenuPressed ()
+        {
+            Time.timeScale = 1;
+            LevelLoader.LoadLevel(mainMenuIndex);
+
+            MainMenu.Open();
+        }
+
+        public void OnQuitPressed ()
+        {
+            Application.Quit();
+        }
+    } 
 }

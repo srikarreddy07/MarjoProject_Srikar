@@ -282,7 +282,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6195806897553714281}
         m_MethodName: OnQuitPressed
         m_Mode: 1
         m_Arguments:
@@ -382,6 +382,7 @@ GameObject:
   - component: {fileID: 4306562924839685120}
   - component: {fileID: 4306562924839685121}
   - component: {fileID: 4306562924839685122}
+  - component: {fileID: 6195806897553714281}
   m_Layer: 5
   m_Name: Pause Menu
   m_TagString: Untagged
@@ -471,6 +472,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &6195806897553714281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4306562924839685123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 857650898ee0dc549902ea37cb007f59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenuIndex: 1
 --- !u!1 &4306562925049858223
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,7 +603,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6195806897553714281}
         m_MethodName: OnMainMenuPressed
         m_Mode: 1
         m_Arguments:
@@ -791,7 +805,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6195806897553714281}
         m_MethodName: OnRestartPressed
         m_Mode: 1
         m_Arguments:
@@ -1007,7 +1021,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6195806897553714281}
         m_MethodName: OnResumePressed
         m_Mode: 1
         m_Arguments:
