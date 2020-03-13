@@ -52,8 +52,20 @@ MonoBehaviour:
     offValue: 0
     button: 1
     condition: 0
-  - axisName: Jump
+  - axisName: Run
     offValue: 0
     button: 4
+    condition: 0
+  - axisName: Jump
+    offValue: 0
+    button: 5
+    condition: 0
+  - axisName: Kick
+    offValue: 0
+    button: 6
+    condition: 0
+  - axisName: Kick B
+    offValue: 0
+    button: 7
     condition: 0
   inputState: {fileID: 0}

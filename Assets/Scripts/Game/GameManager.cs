@@ -43,23 +43,24 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (IsGameOver == false)
+        if (objective != null && objective.IsCompleted)
             EndLevel();
     }
 
     public void EndLevel()
     {
-        //if (playerObject != null)
-        //{
-        //    Rigidbody rbody = playerObject.GetComponent<Rigidbody>();
-        //    if (rbody != null)
-        //    {
-        //        rbody.velocity = Vector3.zero;
-        //    }            
-        //    playerObject.Move(Vector3.zero, false, false);
-        //}
-        
-        if (objective != null && objective.IsCompleted)
+        if (playerObject != null)
+        {            
+            Rigidbody rbody = playerObject.GetComponent<Rigidbody>();
+
+            if (rbody != null)
+            {
+                rbody.velocity = Vector3.zero;
+                rbody.Sleep();
+            }
+        }
+
+        if (IsGameOver == false)
         {
             isGameOver = true;
             LevelCompleted.Open();

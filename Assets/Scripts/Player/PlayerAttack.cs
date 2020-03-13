@@ -14,16 +14,16 @@ public class PlayerAttack : AbstractBehaviour
 
     private void FixedUpdate()
     {
-        var punch = inputState.GetButtonValue(inputButton[1]);
-        var punchHoldTime = inputState.GetButtonHoldTime(inputButton[1]);
-        var batHit = inputState.GetButtonValue(inputButton[0]);
-        var batHoldTime = inputState.GetButtonHoldTime(inputButton[0]);
+        var kick = inputState.GetButtonValue(inputButton[0]);
+        var punchHoldTime = inputState.GetButtonHoldTime(inputButton[0]);
+        var KickB = inputState.GetButtonValue(inputButton[0]);
+        var KickBHoldTime = inputState.GetButtonHoldTime(inputButton[0]);
 
         Collider2D[] enemies = Physics2D.OverlapCircleAll(attackTrans.position, attackRadius, enemyLayer);
 
         if (enemies.Length > 0)
         {
-            if (punch)
+            if (kick)
             {
                 if (Time.time > nextAttack && punchHoldTime < 0.125f)
                 {
@@ -35,9 +35,9 @@ public class PlayerAttack : AbstractBehaviour
                 }
             }
 
-            if (batHit)
+            if (KickB)
             {
-                if (Time.time > nextAttack && batHoldTime < 0.125f)
+                if (Time.time > nextAttack && KickBHoldTime < 0.125f)
                 {
                     for (int i = 0; i < enemies.Length; i++)
                     {

@@ -839,7 +839,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8161239042159640883}
         m_MethodName: OnMasterVolumeChanged
         m_Mode: 0
         m_Arguments:
@@ -2111,6 +2111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86a93181ce2f89488d22da192d5f507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dataManager: {fileID: 0}
+  masterVolumeSlider: {fileID: 9091587312257270542}
 --- !u!1 &8513212269837464315
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,8 @@ public class PlayerMovement : AbstractBehaviour
     [SerializeField] Transform ropeCheckTrans;
     [SerializeField] LayerMask ropeLayer;
     private RaycastHit2D ropeCheckhit2D;
-        
+    
+
     void Update()
     {
         isRunning = false;
@@ -84,5 +85,9 @@ public class PlayerMovement : AbstractBehaviour
                 rbdy2D.gravityScale = 0.75f;
             }
         }
+    }
+
+    private void UpdateAnimation (float walkSpeed)
+    {
     }
 }
