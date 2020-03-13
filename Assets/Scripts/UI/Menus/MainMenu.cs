@@ -6,19 +6,21 @@ namespace LevelManagement
 {
     public class MainMenu : Menu<MainMenu>
     {
+        //[SerializeField] DataManager dataManager;
+
         public void OnPlayPressed ()
         {
-            //LevelSelectionMenu
+            LevelSelectionMenu.Open();
         }
 
         public void OnSettingPressed ()
         {
-
+            SettingMenu.Open();
         }
 
         public void OnCreditsPressed ()
         {
-
+            CreditsMenu.Open();
         }
 
         public void OnQuitPressed ()

@@ -1,18 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
-public class GameMenu : MonoBehaviour
+namespace LevelManagement
 {
-    // Start is called before the first frame update
-    void Start()
+    public class GameMenu : Menu<GameMenu>
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        public void OnPausePressed ()
+        {
+            Time.timeScale = 0;
+            PauseMenu.Open();
+        }
+    } 
 }

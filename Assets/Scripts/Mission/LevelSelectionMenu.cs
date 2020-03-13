@@ -1,18 +1,58 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
+using LevelManagement.Missions;
 
-public class LevelSelectionMenu : MonoBehaviour
+namespace LevelManagement
 {
-    // Start is called before the first frame update
-    void Start()
+    [RequireComponent(typeof(MissionSelector))]
+    public class LevelSelectionMenu : Menu<LevelSelectionMenu>
     {
-        
-    }
+        [SerializeField] protected Text levelName;
+        [SerializeField] protected Text levelDescription;
+        [SerializeField] protected Image levelImage;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        protected MissionSelector missionSelector;
+        protected MissionSpecs currentMission;
+
+        protected override void Awake ()
+        {
+            base.Awake();
+            missionSelector = GetComponent<MissionSelector>();
+
+            UpdateInfo ();
+        }
+
+        private void OnEnable ()
+        {
+            UpdateInfo ();
+        }
+
+        public void UpdateInfo ()
+        {
+            currentMission = missionSelector.GetCurrentMissionSpecs();
+
+            levelName.text = currentMission?.Name;
+            levelDescription.text = currentMission?.Description;
+            levelImage.sprite = currentMission?.SceneImage;
+            levelImage.color = Color.white;
+        }
+
+        public void OnNextPressed ()
+        {
+            missionSelector.IncrementIndex();
+            UpdateInfo();
+        }
+
+        public void OnPreviousPressed ()
+        {
+            missionSelector.DecementIndex();
+            UpdateInfo();
+        }
+
+        public void OnPlayPressed ()
+        {
+            LevelLoader.LoadLevel(currentMission?.SceneName);
+            GameMenu.Open();
+        }
+    } 
 }
