@@ -3,11 +3,13 @@ using LevelManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
+    private static GameManager instance;
 
     [Header("Level")]
     private bool isGameOver;
     public bool IsGameOver { get => isGameOver; }
+
+    public static GameManager Instance { get => instance;}
 
     [Header("Scripts")]
     [SerializeField] Objective objective;

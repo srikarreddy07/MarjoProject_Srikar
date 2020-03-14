@@ -6,6 +6,6 @@ public class DestoryGameObject : MonoBehaviour
 
     private void Awake()
     {
-        Destroy(gameObject, lifeTime);
+        Destroy(this.gameObject, lifeTime);
     }
 }

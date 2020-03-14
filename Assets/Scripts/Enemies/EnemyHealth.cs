@@ -18,7 +18,7 @@ public class EnemyHealth : MonoBehaviour
         spr = GetComponent<SpriteRenderer>();
     }
 
-    public void TakeDamage(float hitPoints)
+    public void EnemyTakeDamage(float hitPoints)
     {
         if (health <= 0)
         {

@@ -28,7 +28,7 @@ public class EnemyPatrollerController : MonoBehaviour
     [SerializeField] float attackRadius = 1f;
     [SerializeField] float attackRate = 0.5f;
     [SerializeField] float nextAttack;
-    [SerializeField] float targetDetectionRange = 0.75f;
+    [SerializeField] float targetDetectionRange = 0.3f;
     [SerializeField] RaycastHit2D hit2D;
     [SerializeField] LayerMask playerLayer;
     [SerializeField] Transform targetTrans;
@@ -55,18 +55,11 @@ public class EnemyPatrollerController : MonoBehaviour
     {
         if (targetTrans == null)
             return;
-
-        //GetFacing();
         
         switch (_aiCurrentStatus)
         {
             case AIStatus.Patrol:
                 canMove = true;
-
-                //if(_faceDirection == FaceDirection.Left)
-                //    transform.position = Vector2.MoveTowards(transform.position, PatrolPoints[0].position, moveSpeed * Time.deltaTime);
-                //else
-                //    transform.position = Vector2.MoveTowards(transform.position, PatrolPoints[1].position, moveSpeed * Time.deltaTime);
 
                 if(checkWalls.collider == true)
                 {
@@ -91,21 +84,6 @@ public class EnemyPatrollerController : MonoBehaviour
                 // Animation
                 enemyAnimator.UpdateAnimation(true, false, 0);
                 break;
-            //case AIStatus.Chase:
-            //    canMove = true;
-
-            //    if (Vector2.Distance(transform.position, targetTrans.position) > 1.5f)
-            //    {
-            //        transform.position = Vector2.MoveTowards(transform.position, new Vector3(targetTrans.position.x, transform.position.y, transform.position.z), moveSpeed * Time.deltaTime);
-
-            //        lastTransformPos = transform.position;
-            //    }
-            //    else
-            //        _aiCurrentStatus = AIStatus.Attack;
-
-            //    // Animation
-            //    enemyAnimator.UpdateAnimation(true, false, 0);
-            //    break;
             case AIStatus.Attack:
                 // Attack //
                 canMove = false;
@@ -119,7 +97,7 @@ public class EnemyPatrollerController : MonoBehaviour
                     {
                         if (Time.time > nextAttack)
                         {
-                            //attackCollider.GetComponent<PlayerHealth>().TakeDamage(5f);
+                            attackCollider.GetComponent<PlayerHealth>().TakeDamage(5f);
                             nextAttack = Time.time + attackRate;
 
                             // Animation
@@ -127,7 +105,7 @@ public class EnemyPatrollerController : MonoBehaviour
 
                             // SFX
                             GameObject obj = Instantiate(sfxGameObject, attackTrans .position, Quaternion.identity);
-                            transform.parent = obj.transform;
+                            obj.transform.SetParent(transform.parent);
                         }
                     }
                 }                

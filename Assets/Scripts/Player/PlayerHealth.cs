@@ -31,7 +31,10 @@ public class PlayerHealth : AbstractBehaviour
                 DataManager.Instance.PlayerHealth = currentHealth;
 
             Debug.Log("Game Over");
-            GameManager.instance.EndLevel();
+            GameManager.Instance.EndLevel();
+
+            DataManager.Instance.PlayerHealth = 100;
+            DataManager.Instance.Save();
         }
         else
         {
@@ -42,9 +45,10 @@ public class PlayerHealth : AbstractBehaviour
                 currentHealth = 0;
 
                 Debug.Log("Game Over");
-                GameManager.instance.EndLevel();
+                GameManager.Instance.EndLevel();
 
                 DataManager.Instance.PlayerHealth = 100;
+                DataManager.Instance.Save();
             }
 
             // Animation

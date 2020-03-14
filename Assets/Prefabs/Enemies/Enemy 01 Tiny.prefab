@@ -253,7 +253,7 @@ MonoBehaviour:
   patrolLayer:
     serializedVersion: 2
     m_Bits: 8192
-  attackRadius: 0.3
+  attackRadius: 0.4
   attackRate: 0.5
   nextAttack: 0
   targetDetectionRange: 0.3
@@ -262,7 +262,7 @@ MonoBehaviour:
     m_Bits: 2048
   targetTrans: {fileID: 0}
   attackTrans: {fileID: 376077541859221258}
-  enemyAnimator: {fileID: 8161350938489783264}
+  enemyAnimator: {fileID: 0}
   sfxGameObject: {fileID: 515367561199238099, guid: d9f900dc63cb88e47a92c74c053a0c9c,
     type: 3}
 --- !u!114 &6137112640827251066
@@ -321,7 +321,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -378,7 +378,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
