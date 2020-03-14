@@ -17,6 +17,7 @@ namespace LevelManagement.Data
             hashValue = string.Empty;
 
             masterVolume = 0f;
+            healthValue = 100f;
             killCount = 0;
         }
     } 

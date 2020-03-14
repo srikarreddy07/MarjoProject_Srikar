@@ -275,6 +275,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3538606028b4fd49b03469f24139f61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthSlider: {fileID: 579764713033654733}
+  killCount: {fileID: 5924780138351563171}
+  dataManager: {fileID: 0}
 --- !u!1 &2430556427046441257
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,7 +8,11 @@ namespace LevelManagement.Data
         private SaveData saveData;
         private JsonSaver jsonSaver;
 
+        private static DataManager instance;
+
         #region Properties
+        public static DataManager Instance { get => instance;}
+
         public float MasterVolume
         {
             get { return saveData.masterVolume; }
@@ -31,8 +35,18 @@ namespace LevelManagement.Data
 
         private void Awake()
         {
+            if (instance != null)
+                Destroy(gameObject);
+            else
+                instance = this;
+
             saveData = new SaveData();
             jsonSaver = new JsonSaver();
+        }
+
+        private void OnDestroy()
+        {
+            instance = null;
         }
 
         public void Save ()

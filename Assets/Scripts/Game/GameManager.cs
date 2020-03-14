@@ -5,9 +5,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    [Header("Score")]
-    public int killCount;
-
     [Header("Level")]
     private bool isGameOver;
     public bool IsGameOver { get => isGameOver; }
@@ -26,19 +23,6 @@ public class GameManager : MonoBehaviour
 
         objective = Object.FindObjectOfType<Objective>();
         playerObject = GameObject.FindGameObjectWithTag("Player");
-
-        killCount = 0;
-    }
-
-    private void OnLevelWasLoaded()
-    {
-    //    killCount = PlayerPrefs.GetInt("Kills");
-    //    UIManager.instance.SetKillCountText();
-    }
-
-    public void SetKillCount ()
-    {
-        killCount++;
     }
 
     private void Update()

@@ -277,10 +277,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad8e10e35f7bd64da7e0357057ecb57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputButton: 06000000
+  inputButton: 0500000006000000
   attackRate: 0.125
   nextAttack: 0
-  attackRadius: 0.4
+  attackRadius: 0.7
   attackTrans: {fileID: 2678733027541067063}
   enemyLayer:
     serializedVersion: 2

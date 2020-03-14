@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using LevelManagement.Data;
 
 namespace LevelManagement
 {
@@ -12,6 +13,7 @@ namespace LevelManagement
         {
             base.OnBackPressed();
 
+            DataManager.Instance.Save();
             LevelLoader.LoadNextLevel();
         }
 
@@ -19,6 +21,7 @@ namespace LevelManagement
         {
             base.OnBackPressed();
 
+            DataManager.Instance.Save();
             LevelLoader.Reload();
         }
 
@@ -26,6 +29,7 @@ namespace LevelManagement
         {
             LevelLoader.LoadLevel(mainMenuIndex);
 
+            DataManager.Instance.Save();
             MainMenu.Open();
         }
     } 

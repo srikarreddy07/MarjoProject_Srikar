@@ -6,8 +6,8 @@ namespace LevelManagement
 {
     public class SettingMenu : Menu<SettingMenu>
     {
-        [Header("Script")]
-        [SerializeField] DataManager dataManager;
+        //[Header("Script")]
+        //[SerializeField] DataManager dataManager;
 
         [Header("Sliders")]
         [SerializeField] Slider masterVolumeSlider;
@@ -15,7 +15,7 @@ namespace LevelManagement
         protected override void Awake()
         {
             base.Awake();
-            dataManager = Object.FindObjectOfType<DataManager>();
+            //dataManager = Object.FindObjectOfType<DataManager>();
         }
 
         private void Start()
@@ -25,26 +25,26 @@ namespace LevelManagement
 
         public void OnMasterVolumeChanged(float volume)
         {
-            if (dataManager != null)
-                dataManager.MasterVolume = volume;
+            if (DataManager.Instance != null)
+                DataManager.Instance.MasterVolume = volume;
         }
 
         public override void OnBackPressed()
         {
             base.OnBackPressed();
 
-            dataManager.Save();
+            DataManager.Instance.Save();
         }
 
 
         public void LoadData()
         {
-            if (dataManager == null || masterVolumeSlider == null)
+            if (DataManager.Instance == null || masterVolumeSlider == null)
                 return;
 
-            dataManager.Load();
+            DataManager.Instance.Load();
 
-            masterVolumeSlider.value = dataManager.MasterVolume;
+            masterVolumeSlider.value = DataManager.Instance.MasterVolume;
         }
     } 
 }

@@ -92,8 +92,4 @@ public class PlayerMovement : AbstractBehaviour
             }
         }
     }
-
-    private void UpdateAnimation (float walkSpeed)
-    {
-    }
 }

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using LevelManagement.Data;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -23,10 +24,7 @@ public class EnemyHealth : MonoBehaviour
         {
             health = 0;
 
-            GameManager.instance.SetKillCount();
-            UIManager.instance.SetKillCountText();
-
-            PlayerPrefs.SetInt("Kills", GameManager.instance.killCount);
+            DataManager.Instance.PlayerKillCount++;
 
             this.gameObject.SetActive(false);
         }
@@ -41,10 +39,7 @@ public class EnemyHealth : MonoBehaviour
             {
                 health = 0;
 
-                GameManager.instance.SetKillCount();
-                UIManager.instance.SetKillCountText();
-
-                PlayerPrefs.SetInt("Kills", GameManager.instance.killCount);
+                DataManager.Instance.PlayerKillCount++;
 
                 this.gameObject.SetActive(false);
             }

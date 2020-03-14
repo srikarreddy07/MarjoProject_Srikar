@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264217818666446888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4, y: 0, z: 0}
+  m_LocalPosition: {x: 0.4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7966094293715609816}
@@ -75,10 +75,10 @@ GameObject:
   - component: {fileID: 704683296439015460}
   - component: {fileID: 9181633395768780912}
   - component: {fileID: 7031993813064886835}
-  - component: {fileID: 577654062123663063}
   - component: {fileID: 4862659946525438619}
   - component: {fileID: 8161350938489783264}
   - component: {fileID: 1291581554047655416}
+  - component: {fileID: 6137112640827251066}
   m_Layer: 0
   m_Name: Enemy 01
   m_TagString: Untagged
@@ -183,7 +183,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.1}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -194,33 +194,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75333333, y: 0.55}
-  m_EdgeRadius: 0
---- !u!61 &577654062123663063
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6368153845319099254}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.26}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.75333333, y: 0.868}
-    newSize: {x: 5.65, y: 6.52}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.75, y: 0.25}
+  m_Size: {x: 0.75, y: 0.8}
   m_EdgeRadius: 0
 --- !u!50 &4862659946525438619
 Rigidbody2D:
@@ -279,17 +253,33 @@ MonoBehaviour:
   patrolLayer:
     serializedVersion: 2
     m_Bits: 8192
-  rayDistance: 2
+  attackRadius: 0.3
+  attackRate: 0.5
+  nextAttack: 0
+  targetDetectionRange: 0.3
   playerLayer:
     serializedVersion: 2
     m_Bits: 2048
   targetTrans: {fileID: 0}
-  attackRate: 0.5
-  nextAttack: 0
-  targetDetectionRange: 5
   attackTrans: {fileID: 376077541859221258}
   enemyAnimator: {fileID: 8161350938489783264}
-  sfxGameObject: {fileID: 0}
+  sfxGameObject: {fileID: 515367561199238099, guid: d9f900dc63cb88e47a92c74c053a0c9c,
+    type: 3}
+--- !u!114 &6137112640827251066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6368153845319099254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be620625ddb8194897b0d8ad43699bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  spr: {fileID: 704683296439015460}
+  attackColor: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &7529961495530202434
 GameObject:
   m_ObjectHideFlags: 0

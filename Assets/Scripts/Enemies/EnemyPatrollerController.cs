@@ -9,7 +9,7 @@ public class EnemyPatrollerController : MonoBehaviour
 
     public enum AIStatus
     {
-        Patrol, Chase, Attack
+        Patrol, Attack
     }
 
     [Header("Variables")]
@@ -24,16 +24,14 @@ public class EnemyPatrollerController : MonoBehaviour
     [SerializeField] RaycastHit2D checkWalls;
     [SerializeField] LayerMask patrolLayer;
 
-    [Header("Raycast")]
-    [SerializeField] float rayDistance = 2f;
-    [SerializeField] LayerMask playerLayer;
-    [SerializeField] RaycastHit2D hit2D;
-    [SerializeField] Transform targetTrans;
-
     [Header("Attack")]
+    [SerializeField] float attackRadius = 1f;
     [SerializeField] float attackRate = 0.5f;
     [SerializeField] float nextAttack;
-    [SerializeField] float targetDetectionRange = 5f;
+    [SerializeField] float targetDetectionRange = 0.75f;
+    [SerializeField] RaycastHit2D hit2D;
+    [SerializeField] LayerMask playerLayer;
+    [SerializeField] Transform targetTrans;
     [SerializeField] Transform attackTrans;
 
     [Header("Animation")]
@@ -72,8 +70,6 @@ public class EnemyPatrollerController : MonoBehaviour
 
                 if(checkWalls.collider == true)
                 {
-                    Debug.Log("Hit Collider: " + checkWalls.transform.name);
-
                     if (_faceDirection == FaceDirection.Right)
                     {
                         transform.eulerAngles = new Vector3(0f, -180f, 0f);
@@ -87,32 +83,35 @@ public class EnemyPatrollerController : MonoBehaviour
                         _faceDirection = FaceDirection.Right;
                     }
                 }
+                if(canMove)
+                    transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
 
-                transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
-                // Animation
-                enemyAnimator.UpdateAnimation(true, false, 0);
-                break;
-            case AIStatus.Chase:
-                canMove = true;
-
-                if (Vector2.Distance(transform.position, targetTrans.position) > 1.5f)
-                {
-                    transform.position = Vector2.MoveTowards(transform.position, new Vector3(targetTrans.position.x, transform.position.y, transform.position.z), moveSpeed * Time.deltaTime);
-
-                    lastTransformPos = transform.position;
-                }
-                else
-                    _aiCurrentStatus = AIStatus.Attack;
+                lastTransformPos = transform.position;
 
                 // Animation
                 enemyAnimator.UpdateAnimation(true, false, 0);
                 break;
+            //case AIStatus.Chase:
+            //    canMove = true;
+
+            //    if (Vector2.Distance(transform.position, targetTrans.position) > 1.5f)
+            //    {
+            //        transform.position = Vector2.MoveTowards(transform.position, new Vector3(targetTrans.position.x, transform.position.y, transform.position.z), moveSpeed * Time.deltaTime);
+
+            //        lastTransformPos = transform.position;
+            //    }
+            //    else
+            //        _aiCurrentStatus = AIStatus.Attack;
+
+            //    // Animation
+            //    enemyAnimator.UpdateAnimation(true, false, 0);
+            //    break;
             case AIStatus.Attack:
                 // Attack //
                 canMove = false;
                 transform.position = lastTransformPos;
 
-                Collider2D attackCollider = Physics2D.OverlapBox(attackTrans.position, attackTrans.localScale, 0f, playerLayer);
+                Collider2D attackCollider = Physics2D.OverlapCircle(attackTrans.position, attackRadius, playerLayer);
 
                 if (attackCollider != null)
                 {
@@ -120,7 +119,7 @@ public class EnemyPatrollerController : MonoBehaviour
                     {
                         if (Time.time > nextAttack)
                         {
-                            attackCollider.GetComponent<PlayerHealth>().TakeDamage(5f);
+                            //attackCollider.GetComponent<PlayerHealth>().TakeDamage(5f);
                             nextAttack = Time.time + attackRate;
 
                             // Animation
@@ -147,21 +146,21 @@ public class EnemyPatrollerController : MonoBehaviour
         // Raycast for walls
         checkWalls = Physics2D.Raycast(transform.position, transform.right, 1f, patrolLayer);
 
-        Debug.DrawRay(transform.position, transform.right * 1f, Color.blue);
 
         // Raycast for Player
-        hit2D = Physics2D.Raycast(attackTrans.position, transform.right, rayDistance, playerLayer);
+        hit2D = Physics2D.Raycast(attackTrans.position, transform.right, targetDetectionRange, playerLayer);
 
         if (hit2D == true)
         {
-            _aiCurrentStatus = AIStatus.Chase;
-            Debug.Log("Found Player");
+            _aiCurrentStatus = AIStatus.Attack;
+            
         }
         else
         {
             //Debug.DrawRay(attackTrans.position, transform.right * rayDistance, Color.blue);
 
             _aiCurrentStatus = AIStatus.Patrol;
+            Debug.DrawRay(transform.position, transform.right * targetDetectionRange, Color.blue);
         }
     }
 
@@ -200,12 +199,18 @@ public class EnemyPatrollerController : MonoBehaviour
             transform.localScale = scale;
         }
     }
-        
-    bool IsTargetInRange ()
+
+    //bool IsTargetInRange ()
+    //{
+    //    if (Vector2.Distance(transform.position, targetTrans.position) < targetDetectionRange)
+    //        return true;
+    //    else
+    //        return false;
+    //}
+
+    private void OnDrawGizmos()
     {
-        if (Vector2.Distance(transform.position, targetTrans.position) < rayDistance)
-            return true;
-        else
-            return false;
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackTrans.position, attackRadius);
     }
 }

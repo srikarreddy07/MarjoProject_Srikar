@@ -31,16 +31,16 @@ public class UIManager : MonoBehaviour
     //    killText.text = "X " + PlayerPrefs.GetInt("Kills").ToString();
     //}
 
-    public void SetHealthUI(float value)
-    {
-        float temp = value / 100f;
+    //public void SetHealthUI(float value)
+    //{
+    //    float temp = value / 100f;
 
-        temp = Mathf.Clamp(temp, 0f, 1f);
-        playerHealth.fillAmount = temp;
-    }
+    //    temp = Mathf.Clamp(temp, 0f, 1f);
+    //    playerHealth.fillAmount = temp;
+    //}
 
-    public void SetKillCountText ()
-    {
-        killText.text = "X " + GameManager.instance.killCount;
-    }
+    //public void SetKillCountText ()
+    //{
+    //    killText.text = "X " + GameManager.instance.killCount;
+    //}
 }

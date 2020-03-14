@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
+using LevelManagement.Data;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : AbstractBehaviour
 {
     [Header("Health")]
     [SerializeField] float currentHealth;
@@ -10,7 +11,13 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
-        currentHealth = 100f;
+        if (DataManager.Instance != null)
+        {
+            DataManager.Instance.Load();
+            currentHealth = DataManager.Instance.PlayerHealth;
+        }
+        else
+            currentHealth = 100f;
 
         spr = GetComponent<SpriteRenderer>();
     }
@@ -20,32 +27,34 @@ public class PlayerHealth : MonoBehaviour
         if(currentHealth <= 0)
         {
             currentHealth = 0;
-            Debug.Log("Game Over");            
+            if (DataManager.Instance != null)
+                DataManager.Instance.PlayerHealth = currentHealth;
+
+            Debug.Log("Game Over");
+            GameManager.instance.EndLevel();
         }
         else
         {
             currentHealth -= hitPoints;
-
-            //UIManager.instance.SetHealthUI(currentHealth);
-
-            spr.color = new Color(1f, 0f, 0f);
-            Invoke("ResetColor", 0.5f);
 
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
 
                 Debug.Log("Game Over");
+                GameManager.instance.EndLevel();
 
-                //if(GameObject.Find("Level Manager").GetComponent<LevelManager>())
-                    //LevelManager.instance.LoadStartScence();
+                DataManager.Instance.PlayerHealth = 100;
             }
-        }
-    }
 
-    void ResetColor ()
-    {
-        CancelInvoke();
-        spr.color = new Color(1f, 1f, 1f);
+            // Animation
+            animator.SetTrigger("Hurt");
+
+            // Save health to disk
+            if (DataManager.Instance != null)
+                DataManager.Instance.PlayerHealth = currentHealth;
+        }
+        if (DataManager.Instance != null)
+            DataManager.Instance.Save();
     }
 }
