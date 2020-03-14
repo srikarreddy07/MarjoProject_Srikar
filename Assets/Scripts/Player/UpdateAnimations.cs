@@ -10,9 +10,6 @@ public class UpdateAnimations : AbstractBehaviour
         var left = inputState.GetButtonValue(inputButton[0]);
         var right = inputState.GetButtonValue(inputButton[1]);
         var run = inputState.GetButtonValue(inputButton[2]);
-        var jump = inputState.GetButtonValue(inputButton[3]);
-        var kick = inputState.GetButtonValue(inputButton[4]);
-
 
         if (left || right)
         {
