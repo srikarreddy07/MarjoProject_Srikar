@@ -26,7 +26,7 @@ public class EnemyPatrollerController : MonoBehaviour
 
     [Header("Attack")]
     [SerializeField] float attackRadius = 1f;
-    [SerializeField] float attackRate = 0.5f;
+    [SerializeField] float attackRate = 1.25f;
     [SerializeField] float nextAttack;
     [SerializeField] float targetDetectionRange = 0.3f;
     [SerializeField] RaycastHit2D hit2D;
@@ -97,7 +97,7 @@ public class EnemyPatrollerController : MonoBehaviour
                     {
                         if (Time.time > nextAttack)
                         {
-                            attackCollider.GetComponent<PlayerHealth>().TakeDamage(5f);
+                            attackCollider.GetComponent<PlayerHealth>().TakeDamage(1f);
                             nextAttack = Time.time + attackRate;
 
                             // Animation

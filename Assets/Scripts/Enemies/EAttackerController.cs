@@ -13,19 +13,33 @@ public class EAttackerController : MonoBehaviour
     public Direction direction;
 
     [Header("Raycast")]
-    [SerializeField] float lookDistance = 2f;
+    [SerializeField] float attackRadius = 2f;
+    [SerializeField] Vector3 raycastDirection;
     [SerializeField] RaycastHit2D hit2D;
     [SerializeField] LayerMask playerLayer;
     [SerializeField] Transform targetPlayer;
 
     [Header("Attack")]
+    [SerializeField] bool isAtacking;
     [SerializeField] float nextAttack;
     [SerializeField] float attackRate = 0.5f;
     [SerializeField] Transform attackTrans;
 
+    [Header("Animator")]
+    [SerializeField] AnimationController animtorController;
+
     private void Awake()
     {
+        animtorController = GetComponent<AnimationController>();
         canMove = true;
+    }
+
+    private void Start()
+    {
+        if (direction == Direction.Left)
+            transform.eulerAngles = new Vector3(0f, -180f, 0f);
+        else
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
     }
 
     private void Update()
@@ -34,16 +48,19 @@ public class EAttackerController : MonoBehaviour
             return;
 
         if(direction == Direction.Left)
-            transform.position -= new Vector3(speed * Time.deltaTime, 0f, 0f);
-        else
             transform.position += new Vector3(speed * Time.deltaTime, 0f, 0f);
+        else
+            transform.position -= new Vector3(speed * Time.deltaTime, 0f, 0f);
+
+        if (this.gameObject.GetComponent<Renderer>().isVisible == false)
+            this.gameObject.gameObject.SetActive(false);
     }
 
     private void FixedUpdate()
     {
         if (direction == Direction.Left)
         {
-            hit2D = Physics2D.Raycast(transform.position, -transform.right, lookDistance, playerLayer);
+            hit2D = Physics2D.Raycast(transform.position, -raycastDirection, attackRadius, playerLayer);
 
             if (hit2D)
             {
@@ -57,12 +74,12 @@ public class EAttackerController : MonoBehaviour
                 canMove = true;
 
                 targetPlayer = null;
-                Debug.DrawRay(transform.position, -transform.right * lookDistance, Color.blue);
+                Debug.DrawRay(transform.position, -raycastDirection * attackRadius, Color.blue);
             }
         }
         else
         {
-            hit2D = Physics2D.Raycast(transform.position, transform.right, lookDistance, playerLayer);
+            hit2D = Physics2D.Raycast(transform.position, raycastDirection, attackRadius, playerLayer);
 
             if (hit2D)
             {
@@ -76,7 +93,7 @@ public class EAttackerController : MonoBehaviour
                 canMove = true;
 
                 targetPlayer = null;
-                Debug.DrawRay(transform.position, transform.right * lookDistance, Color.blue);
+                Debug.DrawRay(transform.position, raycastDirection * attackRadius, Color.blue);
             }
         }
     }
@@ -96,5 +113,11 @@ public class EAttackerController : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackTrans.position, attackRadius);
     }
 }

@@ -22,7 +22,11 @@ public class GameManager : MonoBehaviour
         else
             instance = this;
 
+        DontDestroyOnLoad(gameObject);        
+    }
 
+    private void OnLevelWasLoaded(int level)
+    {
         objective = Object.FindObjectOfType<Objective>();
         playerObject = GameObject.FindGameObjectWithTag("Player");
     }

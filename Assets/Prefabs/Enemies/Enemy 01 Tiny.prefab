@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 8161350938489783264}
   - component: {fileID: 1291581554047655416}
   - component: {fileID: 6137112640827251066}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,12 +249,12 @@ MonoBehaviour:
   lastTransformPos: {x: 0, y: 0, z: 0}
   PatrolPoints:
   - {fileID: 8380028736191245104}
-  - {fileID: 7066489992905713516}
+  - {fileID: 8380028736191245104}
   patrolLayer:
     serializedVersion: 2
     m_Bits: 8192
-  attackRadius: 0.4
-  attackRate: 0.5
+  attackRadius: 0.3
+  attackRate: 1.25
   nextAttack: 0
   targetDetectionRange: 0.3
   playerLayer:
@@ -262,7 +262,7 @@ MonoBehaviour:
     m_Bits: 2048
   targetTrans: {fileID: 0}
   attackTrans: {fileID: 376077541859221258}
-  enemyAnimator: {fileID: 0}
+  enemyAnimator: {fileID: 8161350938489783264}
   sfxGameObject: {fileID: 515367561199238099, guid: d9f900dc63cb88e47a92c74c053a0c9c,
     type: 3}
 --- !u!114 &6137112640827251066
@@ -278,8 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  spr: {fileID: 704683296439015460}
-  attackColor: {r: 0, g: 1, b: 1, a: 1}
+  sprite: {fileID: 704683296439015460}
 --- !u!1 &7529961495530202434
 GameObject:
   m_ObjectHideFlags: 0

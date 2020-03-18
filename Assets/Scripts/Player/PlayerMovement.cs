@@ -14,10 +14,9 @@ public class PlayerMovement : AbstractBehaviour
     [SerializeField] Transform ropeCheckTrans;
     [SerializeField] LayerMask ropeLayer;
     private RaycastHit2D ropeCheckhit2D;
-
-
+    
     [Header("Particles")]
-    [SerializeField] ParticleSystem runTrail;
+    [SerializeField] ParticleSystem runparticles;
 
     void Update()
     {
@@ -26,6 +25,7 @@ public class PlayerMovement : AbstractBehaviour
         var left = inputState.GetButtonValue(inputButton[0]);
         var right = inputState.GetButtonValue(inputButton[1]);
         var run = inputState.GetButtonValue(inputButton[2]);
+        var emission = runparticles.emission;
 
         float tempSpeed = 0f;
 
@@ -45,9 +45,10 @@ public class PlayerMovement : AbstractBehaviour
 
                 rbdy2D.velocity = new Vector2(velX, rbdy2D.velocity.y);
 
-                runTrail.Play();
+                emission.enabled = true;
             }
-            runTrail.Stop();
+            else
+                emission.enabled = false;
         }
 
         // Rope Slide

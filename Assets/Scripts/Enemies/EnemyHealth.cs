@@ -7,15 +7,12 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] float health = 100f;
 
     [Header("Components")]
-    [SerializeField] SpriteRenderer spr;
-
-    [Header("Gizmos")]
-    [SerializeField] Color attackColor = Color.cyan;
+    [SerializeField] SpriteRenderer sprite;
 
     void Start()
     {
         health = 100f;
-        spr = GetComponent<SpriteRenderer>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     public void EnemyTakeDamage(float hitPoints)
@@ -24,7 +21,8 @@ public class EnemyHealth : MonoBehaviour
         {
             health = 0;
 
-            DataManager.Instance.PlayerKillCount++;
+            if(DataManager.Instance)
+                DataManager.Instance.PlayerKillCount++;
 
             this.gameObject.SetActive(false);
         }
@@ -32,14 +30,15 @@ public class EnemyHealth : MonoBehaviour
         {
             health -= hitPoints;
 
-            spr.color = new Color(1f, 0f, 0f);
+            sprite.color = new Color(1f, 0f, 0f);
             Invoke("ResetColor", 0.5f);
 
             if (health <= 0)
             {
                 health = 0;
 
-                DataManager.Instance.PlayerKillCount++;
+                if (DataManager.Instance)
+                    DataManager.Instance.PlayerKillCount++;
 
                 this.gameObject.SetActive(false);
             }
@@ -52,6 +51,6 @@ public class EnemyHealth : MonoBehaviour
     void ResetColor()
     {
         CancelInvoke();
-        spr.color = new Color(1f, 1f, 1f);
+        sprite.color = new Color(1f, 1f, 1f);
     }
 }

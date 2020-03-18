@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using LevelManagement.Data;
 
-public class PlayerHealth : AbstractBehaviour
+public class PlayerHealth : MonoBehaviour
 {
     [Header("Health")]
     [SerializeField] float currentHealth;
 
     [Header("Components")]
     [SerializeField] SpriteRenderer spr;
+    [SerializeField] UpdateAnimations animator;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class PlayerHealth : AbstractBehaviour
             currentHealth = 100f;
 
         spr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<UpdateAnimations>();
     }
 
     public void TakeDamage(float hitPoints)
@@ -32,9 +34,6 @@ public class PlayerHealth : AbstractBehaviour
 
             Debug.Log("Game Over");
             GameManager.Instance.EndLevel();
-
-            DataManager.Instance.PlayerHealth = 100;
-            DataManager.Instance.Save();
         }
         else
         {
@@ -46,18 +45,16 @@ public class PlayerHealth : AbstractBehaviour
 
                 Debug.Log("Game Over");
                 GameManager.Instance.EndLevel();
-
-                DataManager.Instance.PlayerHealth = 100;
-                DataManager.Instance.Save();
             }
 
             // Animation
-            animator.SetTrigger("Hurt");
+            animator.HurtAninamation();
 
             // Save health to disk
             if (DataManager.Instance != null)
                 DataManager.Instance.PlayerHealth = currentHealth;
         }
+
         if (DataManager.Instance != null)
             DataManager.Instance.Save();
     }

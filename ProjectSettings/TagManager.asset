@@ -13,13 +13,13 @@ TagManager:
   - UI
   - 
   - 
-  - postporcessing
   - Collision Check Layer
-  - Rope Layer
-  - Player Layer
   - Enemy Layer
+  - Player Layer
   - Patrol Layer
   - Camera Collider Layer
+  - Rope Layer
+  - postporcessing
   - 
   - 
   - 

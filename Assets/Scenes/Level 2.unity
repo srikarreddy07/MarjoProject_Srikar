@@ -212,7 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 216389109}
   - component: {fileID: 216389110}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,9 +249,12 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 3.0386858, y: -2.3400989}
-  - {x: 4.4852667, y: -1.4070165}
-  - {x: 6.5643387, y: -1.092372}
+  - {x: -19.233578, y: -1.7648315}
+  - {x: -6.2456207, y: -1.7983007}
+  - {x: 0.5295143, y: -1.6903839}
+  - {x: 5.0778637, y: -1.2191477}
+  - {x: 5.8754234, y: -0.9939556}
+  - {x: 8.638721, y: -0.17290545}
   - {x: 19.84862, y: 3.1962328}
 --- !u!1 &271979501
 GameObject:
@@ -263,7 +266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 271979503}
   - component: {fileID: 271979502}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Post-process Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}

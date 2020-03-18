@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 2250337080553488030}
   - component: {fileID: 946584946008344683}
   - component: {fileID: 7939695210278745375}
-  m_Layer: 0
+  - component: {fileID: 1187704545}
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -176,7 +177,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &3709925908589403779
 MonoBehaviour:
@@ -211,7 +212,7 @@ MonoBehaviour:
   bottomPosition: {x: 0, y: 0}
   collisionLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 256
   debugColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &3709925908589403781
 MonoBehaviour:
@@ -264,7 +265,7 @@ MonoBehaviour:
   ropeLayer:
     serializedVersion: 2
     m_Bits: 1024
-  runTrail: {fileID: 6488969399239535876}
+  runparticles: {fileID: 6488969399239535876}
 --- !u!114 &2250337080553488030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,15 +278,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad8e10e35f7bd64da7e0357057ecb57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputButton: 0500000006000000
-  attackRate: 0.125
+  inputButton: 0600000007000000
+  attackRate: 0.0125
   nextAttack: 0
   attackRadius: 0.7
   attackTrans: {fileID: 2678733027541067063}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 4096
-  attackColor: {r: 1, g: 0, b: 1, a: 1}
+  attackColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &946584946008344683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,6 +322,21 @@ MonoBehaviour:
   isLongJumping: 0
   longJumpDelay: 0.15
   longMultipler: 1.5
+--- !u!114 &1187704545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3709925908589403787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754f832c4aeb20048b083d235084588d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  spr: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &3709925909376607610
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,7 +346,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3709925909376607611}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Rope Check Trans
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,7 +361,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3709925909376607610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.25, y: 0.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3709925908589403782}
@@ -375,7 +391,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4728754946669429690}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.95, y: 0.15, z: 0}
+  m_LocalPosition: {x: 0.65, y: -0.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3709925908589403782}
@@ -5109,9 +5125,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1264740947
+  m_SortingLayer: 3
+  m_SortingOrder: 10
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0

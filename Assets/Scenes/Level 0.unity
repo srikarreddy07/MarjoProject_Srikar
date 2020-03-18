@@ -402,7 +402,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1933484398}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1187704532}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5392de24ef2e502409d95c32ec139a51, type: 3}
@@ -418,7 +418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 704721772}
   - component: {fileID: 704721771}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Post-process Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 1019600819}
   - component: {fileID: 1019600818}
   - component: {fileID: 1019600820}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Intro_Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -595,27 +595,6 @@ EdgeCollider2D:
   - {x: -14.203869, y: -1.1733332}
   - {x: 14.039829, y: -1.1569464}
   - {x: 19.213308, y: -1.2270858}
---- !u!1 &1187704532 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3709925908589403787, guid: 92f1f1cade2d52f49be2e8ba178e2f1d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1933484398}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1187704545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1187704532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 754f832c4aeb20048b083d235084588d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputButton: 
-  currentHealth: 0
-  spr: {fileID: 0}
 --- !u!1 &1235718432
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,11 +902,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3709925908589403787, guid: 92f1f1cade2d52f49be2e8ba178e2f1d,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92f1f1cade2d52f49be2e8ba178e2f1d, type: 3}

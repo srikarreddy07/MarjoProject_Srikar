@@ -654,8 +654,8 @@ GameObject:
   m_Component:
   - component: {fileID: 684420268}
   - component: {fileID: 684420269}
-  m_Layer: 9
-  m_Name: GameObject
+  m_Layer: 8
+  m_Name: Additional Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -712,7 +712,7 @@ GameObject:
   - component: {fileID: 686275368}
   - component: {fileID: 686275367}
   - component: {fileID: 686275369}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -877,7 +877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 932320410}
   - component: {fileID: 932320409}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Post-process Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -925,12 +925,12 @@ PrefabInstance:
     - target: {fileID: 3709925908589403782, guid: 92f1f1cade2d52f49be2e8ba178e2f1d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.76
+      value: -5.69
       objectReference: {fileID: 0}
     - target: {fileID: 3709925908589403782, guid: 92f1f1cade2d52f49be2e8ba178e2f1d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.596
+      value: -1.24
       objectReference: {fileID: 0}
     - target: {fileID: 3709925908589403782, guid: 92f1f1cade2d52f49be2e8ba178e2f1d,
         type: 3}

@@ -32,4 +32,9 @@ public class UpdateAnimations : AbstractBehaviour
         if (Input.GetKeyDown(KeyCode.K))
             animator.SetTrigger("KickB");
     }
+
+    public void HurtAninamation ()
+    {
+        animator.SetTrigger("Hurt");
+    }
 }

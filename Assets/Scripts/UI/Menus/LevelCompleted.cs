@@ -13,7 +13,8 @@ namespace LevelManagement
         {
             base.OnBackPressed();
 
-            DataManager.Instance.Save();
+            if(DataManager.Instance)
+                DataManager.Instance.Save();
             LevelLoader.LoadNextLevel();
         }
 
@@ -21,7 +22,8 @@ namespace LevelManagement
         {
             base.OnBackPressed();
 
-            DataManager.Instance.Save();
+            if (DataManager.Instance)
+                DataManager.Instance.Save();
             LevelLoader.Reload();
         }
 
@@ -29,7 +31,8 @@ namespace LevelManagement
         {
             LevelLoader.LoadLevel(mainMenuIndex);
 
-            DataManager.Instance.Save();
+            if (DataManager.Instance)
+                DataManager.Instance.Save();
             MainMenu.Open();
         }
     } 

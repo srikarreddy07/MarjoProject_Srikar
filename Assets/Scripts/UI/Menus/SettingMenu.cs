@@ -29,11 +29,21 @@ namespace LevelManagement
                 DataManager.Instance.MasterVolume = volume;
         }
 
+        public void OnHealthPressed ()
+        {
+            if (DataManager.Instance != null)
+            {
+                DataManager.Instance.PlayerHealth = 100;
+                DataManager.Instance.Save();
+            }
+        }
+
         public override void OnBackPressed()
         {
             base.OnBackPressed();
 
-            DataManager.Instance.Save();
+            if (DataManager.Instance != null)
+                DataManager.Instance.Save();
         }
 
 
@@ -45,6 +55,7 @@ namespace LevelManagement
             DataManager.Instance.Load();
 
             masterVolumeSlider.value = DataManager.Instance.MasterVolume;
+            DataManager.Instance.PlayerHealth = 100;
         }
     } 
 }

@@ -13,7 +13,7 @@ public class EnemySpawner : MonoBehaviour
     private int maxEnemiesOnScreen = 15;
 
     [Header("Spawn Object")]
-    [SerializeField] GameObject enemyPrefab;
+    [SerializeField] GameObject[] enemyPrefab;
 
     [Header("Spawn Variables")]
     [SerializeField] Transform[] spawnTrans;
@@ -26,11 +26,14 @@ public class EnemySpawner : MonoBehaviour
 
         for (int i = 0; i < spawnLength; i++)
         {
-            enemiesArray[i] = Instantiate(enemyPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+            int rand = Random.Range(0, enemyPrefab.Length - 1);
+
+            enemiesArray[i] = Instantiate(enemyPrefab[rand], Vector3.zero, Quaternion.identity) as GameObject;
 
             Transform ObjTrans = enemiesArray[i].GetComponent<Transform>();
-            enemyQueue.Enqueue(ObjTrans);
+            ObjTrans.SetParent(this.transform);
 
+            enemyQueue.Enqueue(ObjTrans);
             enemiesArray[i].SetActive(false);
         }
 
@@ -65,11 +68,13 @@ public class EnemySpawner : MonoBehaviour
 
                     EAttackerController scr = TS.GetComponent<EAttackerController>();
 
-                    if (spawnTrans[index].name == "Left Spawner")
-                        scr.direction = EAttackerController.Direction.Right;
-                    else
-                        scr.direction = EAttackerController.Direction.Left;
-
+                    if(scr != null)
+                    {
+                        if (spawnTrans[index].name == "Spawn Enemy Left")
+                            scr.direction = EAttackerController.Direction.Left;
+                        else
+                            scr.direction = EAttackerController.Direction.Right;
+                    }
 
                     enemyQueue.Enqueue(TS);
 
